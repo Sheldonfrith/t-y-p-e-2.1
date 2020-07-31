@@ -4,8 +4,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import {changeQueryTestResult,
   selectQueryTestResult,
 } from './queryTesterSlice';
-import {testRequest} from '../../global/httpRequests';
-import { handleError } from './../../global/utils';
+import {testRequest} from '../../../global/httpRequests';
+import { handleError } from '../../../global/utils';
 
 export default function Body(props) {
     const queryTestResult = useSelector(selectQueryTestResult);

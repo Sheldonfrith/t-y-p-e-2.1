@@ -1,0 +1,4 @@
+# first param is the path where the new component should be located
+# second param is the name of the new component
+cp ./templateComponent.js $1$2.js
+sed -i "s+COMPONENTNAMEHERE+$2+g" $1$2.js

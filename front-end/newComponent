@@ -1,0 +1,5 @@
+cd ./src/components
+
+bash newComponent $1 $2
+
+cd ../../

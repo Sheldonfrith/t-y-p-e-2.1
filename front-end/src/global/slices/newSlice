@@ -1,0 +1,12 @@
+# # first param is slice name
+# create the slice file
+cp sliceTemplate.js $1.js
+# change the template name to the custom name
+sed -i "s+SLICENAMEHERE+$1+g" $1.js
+# add it to the redux store
+sed -i "s+//add new imports above this line+import $1Reducer from './slices/$1.js';\n//add new imports above this line+" ../store.js
+sed -i "s+//add new slices above this line+         $1: $1Reducer,\n//add new slices above this line+" ../store.js
+
+
+
+# echo 'testing this in i string '$1'didi it work?'

@@ -1,0 +1,5 @@
+cd ./src/global/slices/
+
+bash newSlice $1
+
+cd ../../..

@@ -1,12 +1,13 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
-import { handleError } from './../../global/utils';
+import {Box, Typography, Toolbar} from '@material-ui/core';
 
-export default function Header(props) {
+export default function Header() {
     return (
-        <div>
-        <Typography>Sheldon Frith's Full Stack App Template</Typography>
-        <Typography>Redux example:{props.children}</Typography>
-        </div>
+        <Box>
+            <Toolbar>
+                <Typography>T-Y-P-E</Typography>
+            </Toolbar>
+        </Box>
     );
+    
 }
